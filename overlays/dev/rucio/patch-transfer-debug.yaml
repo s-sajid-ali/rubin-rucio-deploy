@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usdf-conveyor-submitter
+spec:
+  template:
+    spec:
+      containers:
+        - name: rucio-daemons
+          image: ghcr.io/s-sajid-ali/misc/rucio_debug_container:main
+          volumeMounts:
+            - name: transfer-debug
+              mountPath: /usr/local/lib/python3.9/site-packages/rucio/core/transfer.py
+              subPath: transfer.py
+      volumes:
+        - name: transfer-debug
+          configMap:
+            name: cfg-map-transfer-debug
+

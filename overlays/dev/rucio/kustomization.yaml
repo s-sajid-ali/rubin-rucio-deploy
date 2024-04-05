@@ -5,9 +5,16 @@ resources:
 - ns.yaml
 - helm-rucio-server.yaml
 - helm-rucio-daemons.yaml
+#- cfg-map-transfer-debug.yaml
 #- helm-rucio-ui.yaml
 
+configMapGenerator:
+  - name: cfg-map-transfer-debug
+    files:
+    - debug_transfer/transfer.py
+  
 patchesStrategicMerge:
+- patch-transfer-debug.yaml
 - patch-ingress.yaml
 - grid-certificates-patch.yaml
 - hermesk-image-patch.yaml
