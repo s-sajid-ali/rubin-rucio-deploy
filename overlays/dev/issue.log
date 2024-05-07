@@ -1,0 +1,1332 @@
+2024-05-06 21:46:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:46:17 INFO  AbstractOperator:239 - Reconciliation #12945(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:46:18 INFO  KafkaRoller:490 - Reconciliation #12945(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:46:18 INFO  KafkaRoller:313 - Reconciliation #12945(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:46:18 ERROR AbstractOperator:260 - Reconciliation #12945(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:46:18 WARN  AbstractOperator:525 - Reconciliation #12945(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:47:16 INFO  StrimziPodSetController:319 - Reconciliation #12946(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:47:16 INFO  StrimziPodSetController:355 - Reconciliation #12946(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:47:16 INFO  StrimziPodSetController:319 - Reconciliation #12947(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:47:16 INFO  StrimziPodSetController:355 - Reconciliation #12947(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:47:16 INFO  StrimziPodSetController:319 - Reconciliation #12948(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:47:16 INFO  StrimziPodSetController:355 - Reconciliation #12948(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:48:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:48:17 INFO  AbstractOperator:239 - Reconciliation #12949(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:48:18 INFO  KafkaRoller:490 - Reconciliation #12949(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:48:18 INFO  KafkaRoller:313 - Reconciliation #12949(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:48:18 ERROR AbstractOperator:260 - Reconciliation #12949(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:48:18 WARN  AbstractOperator:525 - Reconciliation #12949(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:49:14 INFO  StrimziPodSetController:319 - Reconciliation #12950(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:49:14 INFO  StrimziPodSetController:355 - Reconciliation #12950(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:49:17 INFO  StrimziPodSetController:319 - Reconciliation #12951(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:49:17 INFO  StrimziPodSetController:355 - Reconciliation #12951(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:49:24 INFO  StrimziPodSetController:319 - Reconciliation #12952(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:49:24 INFO  StrimziPodSetController:355 - Reconciliation #12952(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:50:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:50:17 INFO  AbstractOperator:239 - Reconciliation #12953(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:50:18 INFO  KafkaRoller:490 - Reconciliation #12953(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:50:18 INFO  KafkaRoller:313 - Reconciliation #12953(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:50:18 ERROR AbstractOperator:260 - Reconciliation #12953(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:50:18 WARN  AbstractOperator:525 - Reconciliation #12953(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:52:16 INFO  StrimziPodSetController:319 - Reconciliation #12954(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:355 - Reconciliation #12954(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:319 - Reconciliation #12955(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:355 - Reconciliation #12955(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:319 - Reconciliation #12956(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:355 - Reconciliation #12956(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:319 - Reconciliation #12957(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:355 - Reconciliation #12957(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:319 - Reconciliation #12958(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:52:16 INFO  StrimziPodSetController:355 - Reconciliation #12958(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:52:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:52:17 INFO  AbstractOperator:239 - Reconciliation #12959(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:52:18 INFO  KafkaRoller:490 - Reconciliation #12959(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:52:18 INFO  KafkaRoller:313 - Reconciliation #12959(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:52:18 ERROR AbstractOperator:260 - Reconciliation #12959(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:52:18 WARN  AbstractOperator:525 - Reconciliation #12959(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:54:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:54:17 INFO  AbstractOperator:239 - Reconciliation #12960(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:54:18 INFO  KafkaRoller:490 - Reconciliation #12960(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:54:18 INFO  KafkaRoller:313 - Reconciliation #12960(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:54:18 ERROR AbstractOperator:260 - Reconciliation #12960(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:54:18 WARN  AbstractOperator:525 - Reconciliation #12960(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:54:21 INFO  StrimziPodSetController:319 - Reconciliation #12961(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:54:21 INFO  StrimziPodSetController:355 - Reconciliation #12961(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:54:24 INFO  StrimziPodSetController:319 - Reconciliation #12962(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:54:24 INFO  StrimziPodSetController:355 - Reconciliation #12962(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:54:25 INFO  StrimziPodSetController:319 - Reconciliation #12963(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:54:25 INFO  StrimziPodSetController:355 - Reconciliation #12963(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:56:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:56:17 INFO  AbstractOperator:239 - Reconciliation #12964(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:56:18 INFO  KafkaRoller:490 - Reconciliation #12964(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:56:18 INFO  KafkaRoller:313 - Reconciliation #12964(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:56:18 ERROR AbstractOperator:260 - Reconciliation #12964(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:56:18 WARN  AbstractOperator:525 - Reconciliation #12964(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:57:16 INFO  StrimziPodSetController:319 - Reconciliation #12965(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:355 - Reconciliation #12965(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:319 - Reconciliation #12966(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:355 - Reconciliation #12966(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:319 - Reconciliation #12967(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:355 - Reconciliation #12967(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:319 - Reconciliation #12968(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:355 - Reconciliation #12968(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:319 - Reconciliation #12969(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:57:16 INFO  StrimziPodSetController:355 - Reconciliation #12969(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:58:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 21:58:17 INFO  AbstractOperator:239 - Reconciliation #12970(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 21:58:18 INFO  KafkaRoller:490 - Reconciliation #12970(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 21:58:18 INFO  KafkaRoller:313 - Reconciliation #12970(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:58:18 ERROR AbstractOperator:260 - Reconciliation #12970(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:58:18 WARN  AbstractOperator:525 - Reconciliation #12970(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 21:59:31 INFO  StrimziPodSetController:319 - Reconciliation #12971(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:59:31 INFO  StrimziPodSetController:355 - Reconciliation #12971(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:59:34 INFO  StrimziPodSetController:319 - Reconciliation #12972(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:59:34 INFO  StrimziPodSetController:355 - Reconciliation #12972(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 21:59:35 INFO  StrimziPodSetController:319 - Reconciliation #12973(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 21:59:35 INFO  StrimziPodSetController:355 - Reconciliation #12973(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:00:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:00:17 INFO  AbstractOperator:239 - Reconciliation #12974(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:00:18 INFO  KafkaRoller:490 - Reconciliation #12974(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:00:18 INFO  KafkaRoller:313 - Reconciliation #12974(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:00:18 ERROR AbstractOperator:260 - Reconciliation #12974(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:00:18 WARN  AbstractOperator:525 - Reconciliation #12974(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:02:16 INFO  StrimziPodSetController:319 - Reconciliation #12975(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:355 - Reconciliation #12975(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:319 - Reconciliation #12976(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:355 - Reconciliation #12976(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:319 - Reconciliation #12977(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:355 - Reconciliation #12977(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:319 - Reconciliation #12978(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:355 - Reconciliation #12978(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:319 - Reconciliation #12979(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:02:16 INFO  StrimziPodSetController:355 - Reconciliation #12979(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:02:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:02:17 INFO  AbstractOperator:239 - Reconciliation #12980(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:02:18 INFO  KafkaRoller:490 - Reconciliation #12980(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:02:18 INFO  KafkaRoller:313 - Reconciliation #12980(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:02:18 ERROR AbstractOperator:260 - Reconciliation #12980(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:02:18 WARN  AbstractOperator:525 - Reconciliation #12980(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:04:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:04:17 INFO  AbstractOperator:239 - Reconciliation #12981(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:04:18 INFO  KafkaRoller:490 - Reconciliation #12981(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:04:18 INFO  KafkaRoller:313 - Reconciliation #12981(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:04:18 ERROR AbstractOperator:260 - Reconciliation #12981(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:04:18 WARN  AbstractOperator:525 - Reconciliation #12981(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:04:35 INFO  StrimziPodSetController:319 - Reconciliation #12982(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:04:35 INFO  StrimziPodSetController:355 - Reconciliation #12982(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:04:38 INFO  StrimziPodSetController:319 - Reconciliation #12983(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:04:38 INFO  StrimziPodSetController:355 - Reconciliation #12983(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:04:44 INFO  StrimziPodSetController:319 - Reconciliation #12984(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:04:44 INFO  StrimziPodSetController:355 - Reconciliation #12984(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:06:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:06:17 INFO  AbstractOperator:239 - Reconciliation #12985(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:06:18 INFO  KafkaRoller:490 - Reconciliation #12985(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:06:18 INFO  KafkaRoller:313 - Reconciliation #12985(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:06:18 ERROR AbstractOperator:260 - Reconciliation #12985(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:06:18 WARN  AbstractOperator:525 - Reconciliation #12985(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:07:16 INFO  StrimziPodSetController:319 - Reconciliation #12986(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:07:16 INFO  StrimziPodSetController:355 - Reconciliation #12986(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:07:16 INFO  StrimziPodSetController:319 - Reconciliation #12987(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:07:16 INFO  StrimziPodSetController:355 - Reconciliation #12987(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:07:16 INFO  StrimziPodSetController:319 - Reconciliation #12988(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:07:16 INFO  StrimziPodSetController:355 - Reconciliation #12988(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:08:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:08:17 INFO  AbstractOperator:239 - Reconciliation #12989(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:08:18 INFO  KafkaRoller:490 - Reconciliation #12989(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:08:18 INFO  KafkaRoller:313 - Reconciliation #12989(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:08:18 ERROR AbstractOperator:260 - Reconciliation #12989(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:08:18 WARN  AbstractOperator:525 - Reconciliation #12989(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:09:46 INFO  StrimziPodSetController:319 - Reconciliation #12990(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:09:46 INFO  StrimziPodSetController:355 - Reconciliation #12990(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:09:49 INFO  StrimziPodSetController:319 - Reconciliation #12991(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:09:49 INFO  StrimziPodSetController:355 - Reconciliation #12991(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:09:54 INFO  StrimziPodSetController:319 - Reconciliation #12992(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:09:54 INFO  StrimziPodSetController:355 - Reconciliation #12992(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:10:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:10:17 INFO  AbstractOperator:239 - Reconciliation #12993(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:10:18 INFO  KafkaRoller:490 - Reconciliation #12993(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:10:18 INFO  KafkaRoller:313 - Reconciliation #12993(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:10:18 ERROR AbstractOperator:260 - Reconciliation #12993(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:10:18 WARN  AbstractOperator:525 - Reconciliation #12993(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:12:16 INFO  StrimziPodSetController:319 - Reconciliation #12994(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:12:16 INFO  StrimziPodSetController:355 - Reconciliation #12994(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:12:16 INFO  StrimziPodSetController:319 - Reconciliation #12995(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:12:16 INFO  StrimziPodSetController:355 - Reconciliation #12995(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:12:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:12:17 INFO  AbstractOperator:239 - Reconciliation #12996(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:12:18 INFO  KafkaRoller:490 - Reconciliation #12996(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:12:18 INFO  KafkaRoller:313 - Reconciliation #12996(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:12:18 ERROR AbstractOperator:260 - Reconciliation #12996(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:12:18 WARN  AbstractOperator:525 - Reconciliation #12996(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:14:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:14:17 INFO  AbstractOperator:239 - Reconciliation #12997(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:14:18 INFO  KafkaRoller:490 - Reconciliation #12997(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:14:18 INFO  KafkaRoller:313 - Reconciliation #12997(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:14:18 ERROR AbstractOperator:260 - Reconciliation #12997(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:14:18 WARN  AbstractOperator:525 - Reconciliation #12997(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:15:00 INFO  StrimziPodSetController:319 - Reconciliation #12998(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:15:00 INFO  StrimziPodSetController:355 - Reconciliation #12998(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:15:03 INFO  StrimziPodSetController:319 - Reconciliation #12999(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:15:03 INFO  StrimziPodSetController:355 - Reconciliation #12999(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:15:04 INFO  StrimziPodSetController:319 - Reconciliation #13000(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:15:04 INFO  StrimziPodSetController:355 - Reconciliation #13000(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:16:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:16:17 INFO  AbstractOperator:239 - Reconciliation #13001(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:16:18 INFO  KafkaRoller:490 - Reconciliation #13001(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:16:18 INFO  KafkaRoller:313 - Reconciliation #13001(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:16:18 ERROR AbstractOperator:260 - Reconciliation #13001(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:16:18 WARN  AbstractOperator:525 - Reconciliation #13001(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:17:16 INFO  StrimziPodSetController:319 - Reconciliation #13002(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:355 - Reconciliation #13002(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:319 - Reconciliation #13003(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:355 - Reconciliation #13003(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:319 - Reconciliation #13004(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:355 - Reconciliation #13004(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:319 - Reconciliation #13005(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:355 - Reconciliation #13005(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:319 - Reconciliation #13006(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:17:16 INFO  StrimziPodSetController:355 - Reconciliation #13006(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:18:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:18:17 INFO  AbstractOperator:239 - Reconciliation #13007(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:18:18 INFO  KafkaRoller:490 - Reconciliation #13007(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:18:18 INFO  KafkaRoller:313 - Reconciliation #13007(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:18:18 ERROR AbstractOperator:260 - Reconciliation #13007(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:18:18 WARN  AbstractOperator:525 - Reconciliation #13007(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:20:10 INFO  StrimziPodSetController:319 - Reconciliation #13008(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:20:10 INFO  StrimziPodSetController:355 - Reconciliation #13008(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:20:14 INFO  StrimziPodSetController:319 - Reconciliation #13009(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:20:14 INFO  StrimziPodSetController:355 - Reconciliation #13009(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:20:15 INFO  StrimziPodSetController:319 - Reconciliation #13010(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:20:15 INFO  StrimziPodSetController:355 - Reconciliation #13010(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:20:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:20:17 INFO  AbstractOperator:239 - Reconciliation #13011(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:20:18 INFO  KafkaRoller:490 - Reconciliation #13011(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:20:18 INFO  KafkaRoller:313 - Reconciliation #13011(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:20:18 ERROR AbstractOperator:260 - Reconciliation #13011(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:20:18 WARN  AbstractOperator:525 - Reconciliation #13011(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:22:16 INFO  StrimziPodSetController:319 - Reconciliation #13012(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:355 - Reconciliation #13012(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:319 - Reconciliation #13013(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:355 - Reconciliation #13013(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:319 - Reconciliation #13014(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:355 - Reconciliation #13014(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:319 - Reconciliation #13015(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:355 - Reconciliation #13015(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:319 - Reconciliation #13016(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:22:16 INFO  StrimziPodSetController:355 - Reconciliation #13016(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:22:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:22:17 INFO  AbstractOperator:239 - Reconciliation #13017(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:22:18 INFO  KafkaRoller:490 - Reconciliation #13017(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:22:18 INFO  KafkaRoller:313 - Reconciliation #13017(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:22:18 ERROR AbstractOperator:260 - Reconciliation #13017(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:22:18 WARN  AbstractOperator:525 - Reconciliation #13017(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:24:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:24:17 INFO  AbstractOperator:239 - Reconciliation #13018(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:24:18 INFO  KafkaRoller:490 - Reconciliation #13018(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:24:18 INFO  KafkaRoller:313 - Reconciliation #13018(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:24:18 ERROR AbstractOperator:260 - Reconciliation #13018(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:24:18 WARN  AbstractOperator:525 - Reconciliation #13018(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:25:22 INFO  StrimziPodSetController:319 - Reconciliation #13019(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:25:22 INFO  StrimziPodSetController:355 - Reconciliation #13019(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:25:25 INFO  StrimziPodSetController:319 - Reconciliation #13020(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:25:25 INFO  StrimziPodSetController:355 - Reconciliation #13020(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:25:34 INFO  StrimziPodSetController:319 - Reconciliation #13021(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:25:34 INFO  StrimziPodSetController:355 - Reconciliation #13021(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:26:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:26:17 INFO  AbstractOperator:239 - Reconciliation #13022(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:26:18 INFO  KafkaRoller:490 - Reconciliation #13022(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:26:18 INFO  KafkaRoller:313 - Reconciliation #13022(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:26:18 ERROR AbstractOperator:260 - Reconciliation #13022(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:26:18 WARN  AbstractOperator:525 - Reconciliation #13022(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:27:02 ERROR AbstractOperator:492 - Watcher closed with exception in namespace *
+io.fabric8.kubernetes.client.WatcherException: The resourceVersion for the provided watch is too old.
+	at io.fabric8.kubernetes.client.dsl.internal.AbstractWatchManager.onStatus(AbstractWatchManager.java:395) ~[io.fabric8.kubernetes-client-6.7.0.jar:?]
+	at io.fabric8.kubernetes.client.dsl.internal.AbstractWatchManager.onMessage(AbstractWatchManager.java:363) ~[io.fabric8.kubernetes-client-6.7.0.jar:?]
+	at io.fabric8.kubernetes.client.dsl.internal.WatcherWebSocketListener.onMessage(WatcherWebSocketListener.java:52) ~[io.fabric8.kubernetes-client-6.7.0.jar:?]
+	at io.fabric8.kubernetes.client.jdkhttp.JdkWebSocketImpl.onText(JdkWebSocketImpl.java:74) ~[io.fabric8.kubernetes-httpclient-jdk-6.7.0.jar:?]
+	at jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.processText(WebSocketImpl.java:635) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.WebSocketImpl$ReceiveTask.run(WebSocketImpl.java:443) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:157) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:305) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:274) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.WebSocketImpl.tryChangeState(WebSocketImpl.java:861) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.WebSocketImpl$SignallingMessageConsumer.onText(WebSocketImpl.java:794) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.MessageDecoder.payloadData(MessageDecoder.java:241) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.Frame$Reader.readFrame(Frame.java:465) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.TransportImpl$ReceiveTask.run(TransportImpl.java:669) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:?]
+	at jdk.internal.net.http.websocket.TransportImpl$ReadEvent.handle(TransportImpl.java:766) ~[java.net.http:?]
+	at jdk.internal.net.http.RawChannelTube$ReadSubscriber.checkEvents(RawChannelTube.java:174) ~[java.net.http:?]
+	at jdk.internal.net.http.RawChannelTube$ReadSubscriber.onNext(RawChannelTube.java:204) ~[java.net.http:?]
+	at jdk.internal.net.http.RawChannelTube$ReadSubscriber.onNext(RawChannelTube.java:157) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$DelegateWrapper.onNext(SSLTube.java:210) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onNext(SSLTube.java:492) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onNext(SSLTube.java:295) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:316) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:198) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:444) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:268) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: io.fabric8.kubernetes.client.KubernetesClientException: The resourceVersion for the provided watch is too old.
+	... 44 more
+2024-05-06 22:27:02 INFO  OperatorWatcher:38 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka in namespace usdf-kafka was ADDED
+2024-05-06 22:27:02 INFO  AbstractOperator:239 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:27:04 INFO  KafkaRoller:490 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:27:04 INFO  KafkaRoller:313 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:27:04 ERROR AbstractOperator:260 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:27:04 WARN  AbstractOperator:525 - Reconciliation #13023(watch) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:27:16 INFO  StrimziPodSetController:319 - Reconciliation #13024(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:355 - Reconciliation #13024(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:319 - Reconciliation #13025(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:355 - Reconciliation #13025(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:319 - Reconciliation #13026(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:355 - Reconciliation #13026(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:319 - Reconciliation #13027(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:355 - Reconciliation #13027(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:319 - Reconciliation #13028(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:27:16 INFO  StrimziPodSetController:355 - Reconciliation #13028(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:28:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:28:17 INFO  AbstractOperator:239 - Reconciliation #13029(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:28:18 INFO  KafkaRoller:490 - Reconciliation #13029(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:28:18 INFO  KafkaRoller:313 - Reconciliation #13029(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:28:18 ERROR AbstractOperator:260 - Reconciliation #13029(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:28:18 WARN  AbstractOperator:525 - Reconciliation #13029(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:30:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:30:17 INFO  AbstractOperator:239 - Reconciliation #13030(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:30:18 INFO  KafkaRoller:490 - Reconciliation #13030(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:30:18 INFO  KafkaRoller:313 - Reconciliation #13030(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:30:18 ERROR AbstractOperator:260 - Reconciliation #13030(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:30:18 WARN  AbstractOperator:525 - Reconciliation #13030(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:30:27 INFO  StrimziPodSetController:319 - Reconciliation #13031(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:30:27 INFO  StrimziPodSetController:355 - Reconciliation #13031(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:30:30 INFO  StrimziPodSetController:319 - Reconciliation #13032(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:30:30 INFO  StrimziPodSetController:355 - Reconciliation #13032(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:30:34 INFO  StrimziPodSetController:319 - Reconciliation #13033(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:30:34 INFO  StrimziPodSetController:355 - Reconciliation #13033(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:319 - Reconciliation #13034(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:355 - Reconciliation #13034(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:319 - Reconciliation #13035(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:355 - Reconciliation #13035(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:319 - Reconciliation #13036(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:32:16 INFO  StrimziPodSetController:355 - Reconciliation #13036(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:32:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:32:17 INFO  AbstractOperator:239 - Reconciliation #13037(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:32:18 INFO  KafkaRoller:490 - Reconciliation #13037(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:32:18 INFO  KafkaRoller:313 - Reconciliation #13037(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:32:18 ERROR AbstractOperator:260 - Reconciliation #13037(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:32:18 WARN  AbstractOperator:525 - Reconciliation #13037(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:34:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:34:17 INFO  AbstractOperator:239 - Reconciliation #13038(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:34:18 INFO  KafkaRoller:490 - Reconciliation #13038(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:34:18 INFO  KafkaRoller:313 - Reconciliation #13038(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:34:18 ERROR AbstractOperator:260 - Reconciliation #13038(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:34:18 WARN  AbstractOperator:525 - Reconciliation #13038(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:35:39 INFO  StrimziPodSetController:319 - Reconciliation #13039(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:35:39 INFO  StrimziPodSetController:355 - Reconciliation #13039(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:35:44 INFO  StrimziPodSetController:319 - Reconciliation #13040(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:35:44 INFO  StrimziPodSetController:355 - Reconciliation #13040(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:35:45 INFO  StrimziPodSetController:319 - Reconciliation #13041(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:35:45 INFO  StrimziPodSetController:355 - Reconciliation #13041(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:36:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:36:17 INFO  AbstractOperator:239 - Reconciliation #13042(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:36:18 INFO  KafkaRoller:490 - Reconciliation #13042(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:36:18 INFO  KafkaRoller:313 - Reconciliation #13042(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:36:18 ERROR AbstractOperator:260 - Reconciliation #13042(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:36:18 WARN  AbstractOperator:525 - Reconciliation #13042(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:37:16 INFO  StrimziPodSetController:319 - Reconciliation #13043(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:355 - Reconciliation #13043(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:319 - Reconciliation #13044(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:355 - Reconciliation #13044(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:319 - Reconciliation #13045(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:355 - Reconciliation #13045(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:319 - Reconciliation #13046(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:355 - Reconciliation #13046(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:319 - Reconciliation #13047(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:37:16 INFO  StrimziPodSetController:355 - Reconciliation #13047(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:38:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:38:17 INFO  AbstractOperator:239 - Reconciliation #13048(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:38:18 INFO  KafkaRoller:490 - Reconciliation #13048(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:38:18 INFO  KafkaRoller:313 - Reconciliation #13048(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:38:18 ERROR AbstractOperator:260 - Reconciliation #13048(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:38:18 WARN  AbstractOperator:525 - Reconciliation #13048(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:40:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:40:17 INFO  AbstractOperator:239 - Reconciliation #13049(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:40:18 INFO  KafkaRoller:490 - Reconciliation #13049(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:40:18 INFO  KafkaRoller:313 - Reconciliation #13049(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:40:18 ERROR AbstractOperator:260 - Reconciliation #13049(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:40:18 WARN  AbstractOperator:525 - Reconciliation #13049(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:40:44 INFO  StrimziPodSetController:319 - Reconciliation #13050(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:40:44 INFO  StrimziPodSetController:355 - Reconciliation #13050(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:40:48 INFO  StrimziPodSetController:319 - Reconciliation #13051(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:40:48 INFO  StrimziPodSetController:355 - Reconciliation #13051(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:40:54 INFO  StrimziPodSetController:319 - Reconciliation #13052(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:40:54 INFO  StrimziPodSetController:355 - Reconciliation #13052(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:319 - Reconciliation #13053(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:355 - Reconciliation #13053(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:319 - Reconciliation #13054(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:355 - Reconciliation #13054(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:319 - Reconciliation #13055(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:355 - Reconciliation #13055(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:319 - Reconciliation #13056(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): StrimziPodSet will be reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:355 - Reconciliation #13056(watch) StrimziPodSet(usdf-kafka/rucio-kafka-zookeeper): reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:319 - Reconciliation #13057(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): StrimziPodSet will be reconciled
+2024-05-06 22:42:16 INFO  StrimziPodSetController:355 - Reconciliation #13057(watch) StrimziPodSet(usdf-kafka/rucio-kafka-kafka): reconciled
+2024-05-06 22:42:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:42:17 INFO  AbstractOperator:239 - Reconciliation #13058(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:42:18 INFO  KafkaRoller:490 - Reconciliation #13058(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:42:18 INFO  KafkaRoller:313 - Reconciliation #13058(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:42:18 ERROR AbstractOperator:260 - Reconciliation #13058(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:42:18 WARN  AbstractOperator:525 - Reconciliation #13058(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:44:17 INFO  ClusterOperator:139 - Triggering periodic reconciliation for namespace *
+2024-05-06 22:44:17 INFO  AbstractOperator:239 - Reconciliation #13059(timer) Kafka(usdf-kafka/rucio-kafka): Kafka rucio-kafka will be checked for creation or modification
+2024-05-06 22:44:18 INFO  KafkaRoller:490 - Reconciliation #13059(timer) Kafka(usdf-kafka/rucio-kafka): Pod rucio-kafka-kafka-1/1 needs to be restarted, because it seems to be stuck and restart might help
+2024-05-06 22:44:18 INFO  KafkaRoller:313 - Reconciliation #13059(timer) Kafka(usdf-kafka/rucio-kafka): Could not verify pod rucio-kafka-kafka-1/1 is up-to-date, giving up after 10 attempts. Total delay between attempts 127750ms
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:44:18 ERROR AbstractOperator:260 - Reconciliation #13059(timer) Kafka(usdf-kafka/rucio-kafka): createOrUpdate failed
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2024-05-06 22:44:18 WARN  AbstractOperator:525 - Reconciliation #13059(timer) Kafka(usdf-kafka/rucio-kafka): Failed to reconcile
+io.strimzi.operator.cluster.operator.resource.KafkaRoller$FatalProblem: Pod is unschedulable
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.checkReconfigurability(KafkaRoller.java:498) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.restartIfNecessary(KafkaRoller.java:384) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at io.strimzi.operator.cluster.operator.resource.KafkaRoller.lambda$schedule$6(KafkaRoller.java:307) ~[io.strimzi.cluster-operator-0.35.1.jar:0.35.1]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
